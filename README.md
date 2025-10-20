@@ -102,8 +102,8 @@ The dataset is prepared through the Roboflow platform since it provide function 
    - Brightness: Between -15% and +15%
    - Exposure: Between -10% and +10%
    - Blur: Up to 1.5px
-   - Noise: Up to 0.1% of pixels
-   ** After augementation, there are total 133 iamges
+   - Noise: Up to 0.1% of pixels\
+   **After augementation, there are total 133 images
 5. **Dataset Split**: Train set (79%), Valid set (10%) and test set (11%)
 
 ### Augmentation Benefits
@@ -192,7 +192,7 @@ The detection results are saved under the `outputs/` folder. \
 
 You are feel free to try on your own images or videos but make sure upload them to the corresponding subfolder and remember to modify the input path name under the `detect.py` or `counter.py` scripts.
 
-## Performance Metrics
+## Model Performance Metrics
 
 The model's performance was evaluated using various metrics during training and validation. Below are the key performance indicators:
 
@@ -207,8 +207,6 @@ Evaluated on validation set:
 
 ![Performance Curves](assets/performance_curve.png)
 *Figure 4: Precision-Recall and F1-Confidence curves demonstrating model performance*
-
-### Model Performance Analysis
 
 ![Confusion Matrix](assets/confusion_matrix.png)
 *Figure 5: Confusion matrix showing classification accuracy for face detection*
@@ -271,8 +269,6 @@ This project successfully demonstrates an end-to-end implementation of face dete
 
 ### Future Enhancements
 
-### Future Enhancements
-
 - **GPU Acceleration**: Implement CUDA support for real-time processing (25-60 FPS)
 - **Advanced Tracking**: Integrate DeepSORT or ByteTrack for improved accuracy
 - **Multi-Camera System**: Support multiple camera angles for comprehensive coverage
@@ -280,8 +276,6 @@ This project successfully demonstrates an end-to-end implementation of face dete
 - **Dataset Expansion**: Include crowded scenes, extreme lighting, and occlusion cases
 - **Model Variants**: Train on larger YOLOv11 models (s, m, l) for higher accuracy
 - **Extended Features**: Face mask detection, age/gender classification
-
-This project provides a foundation for building production-ready people counting systems with clear performance considerations.
 
 ## License
 
